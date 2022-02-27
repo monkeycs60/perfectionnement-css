@@ -10,27 +10,36 @@ body {
 header {
    grid-column: 2 / span 3;
    grid-row: 1;
-   background-color: aquamarine
+   background-color: aquamarine;
+   text-align: center;
 }
 nav {
     grid-column: 1;
     grid-row: 2 / span 2;
     background-color: darkred;
 }
+article {
+    background-color: violet;
+    color: greenyellow;
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 3;
+    transition: 3s ease-in-out 0.3s ;
+    
+}
+article:hover {
+    color: rgb(61, 19, 179);
+    border: 3px ridge darkcyan;
+    background-color: aqua;
+}
+
+aside {
+    background-color: green;
+    grid-column: 4;
+    grid-row: 1 / span 4;
+}
 
 footer {
     background-color: yellow;
     grid-column: 1 / span 3;
     grid-row: 3;
-}
-article {
-    background-color: violet;
-    grid-column: 2 / span 3;
-    grid-row: 2 / span 3;
-
-}
-aside {
-    background-color: green;
-    grid-column: 4;
-    grid-row: 1 / span 4;
 }
