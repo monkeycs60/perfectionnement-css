@@ -1,3 +1,36 @@
 body {
-    
+    width: 50%;
+    margin: auto;
+}
+#container {
+   display: grid;
+   grid-template-columns: 150px 200px 200px 100px;
+   grid-template-rows: 150px 400px 100px;
+}
+header {
+   grid-column: 2 / span 3;
+   grid-row: 1;
+   background-color: aquamarine
+}
+nav {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    background-color: darkred;
+}
+
+footer {
+    background-color: yellow;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+article {
+    background-color: violet;
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 3;
+
+}
+aside {
+    background-color: green;
+    grid-column: 4;
+    grid-row: 1 / span 4;
 }
