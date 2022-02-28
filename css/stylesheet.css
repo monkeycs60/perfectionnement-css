@@ -13,6 +13,9 @@ header {
    background-color: aquamarine;
    text-align: center;
 }
+.header__text {
+    color: red;
+}
 nav {
     grid-column: 1;
     grid-row: 2 / span 2;
@@ -23,13 +26,15 @@ article {
     color: greenyellow;
     grid-column: 2 / span 3;
     grid-row: 2 / span 3;
-    transition: 3s ease-in-out 0.3s ;
+    transition: 4s ease-in-out 0.3s ;
     
 }
 article:hover {
+    transform: translate(54px, 50px);
     color: rgb(61, 19, 179);
     border: 3px ridge darkcyan;
     background-color: aqua;
+    margin: 10em;
 }
 
 aside {
