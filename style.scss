@@ -1,3 +1,9 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 $color-nice: rgb(67, 8, 230);
 $font-sizedd: 0.8em;
 
