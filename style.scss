@@ -30,7 +30,7 @@ body {
   nav {
     grid-column: 1;
     grid-row: 2 / span 2;
-    background-color: rgba(139, 0, 0, 0.938);
+    background-color: rgba(196, 37, 37, 0.938);
     padding-left: 2em;
     padding-top: 5em;
     
@@ -43,27 +43,25 @@ body {
           padding: 1em;
           font-size: 0.8em;
           text-indent: 1.5em;
-          transition: 3s ease-in 0.3s;
-          &:hover {
-            transform: translateX(50px);
-          }
-          &:first-child {
-            color: green;
-          }
-          &:nth-child(2) {
-            color: white;
-            font-size: 1.3em;
-    
-          }
-          &:nth-child(3) {
+          transition: 2s ease-out 0.2s;
+         
+          
+          &:nth-child(odd) {
+            color: rgb(212, 204, 204);
+            transition: 2s ease-in 0.1s;
+            &:hover {
+              transform: translate(40px);
+              text-decoration: underline;
+            }
            
           }
-          &:nth-child(4) {
-            color: blue;
-            font-size: 1.3em;
-          }
-          &:nth-child(5) {
-            color: chartreuse;
+          &:nth-child(even) {
+            color: rgb(51, 138, 179);
+            &:hover {
+              transform: translate(-40px);
+              text-decoration: underline;
+            }
+           
           }
         }
       }
@@ -100,4 +98,3 @@ body {
     grid-row: 3;
     font-size: $font-sizedd;
   }
-  
