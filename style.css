@@ -6,23 +6,23 @@
 }
 
 body {
-  width: 50%;
+  width: 80%;
   margin: auto;
 }
 
 #container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 150px 200px 200px 100px;
-      grid-template-columns: 150px 200px 200px 100px;
-  -ms-grid-rows: 150px 400px 100px;
-      grid-template-rows: 150px 400px 100px;
+  -ms-grid-columns: 150px 150px 200px 200px 100px 200px;
+      grid-template-columns: 150px 150px 200px 200px 100px 200px;
+  -ms-grid-rows: 150px 400px 100px 250px;
+      grid-template-rows: 150px 400px 100px 250px;
 }
 
 header {
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
   -ms-grid-column-span: 3;
-  grid-column: 2 / span 3;
+  grid-column: 3 / span 3;
   -ms-grid-row: 1;
   grid-row: 1;
   background-color: aquamarine;
@@ -34,8 +34,8 @@ header {
 }
 
 nav {
-  -ms-grid-column: 1;
-  grid-column: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2 / span 2;
@@ -82,12 +82,12 @@ nav .flex-nav ul li:nth-child(even):hover {
 article {
   background-color: violet;
   color: greenyellow;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
   -ms-grid-column-span: 3;
-  grid-column: 2 / span 3;
+  grid-column: 3 / span 3;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  grid-row: 2 / span 3;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
   -webkit-transition: 4s ease-in-out 0.3s;
   transition: 4s ease-in-out 0.3s;
 }
@@ -102,21 +102,57 @@ article:hover {
 
 aside {
   background-color: green;
-  -ms-grid-column: 4;
-  grid-column: 4;
+  -ms-grid-column: 5;
+  grid-column: 5;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  grid-row: 1 / span 4;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
 }
 
 footer {
   color: #4308e6;
   background-color: yellow;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
+  grid-column: 2 / span 3;
   -ms-grid-row: 3;
   grid-row: 3;
   font-size: 0.8em;
+}
+
+.caroussel {
+  background-color: blue;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / span 6;
+}
+
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.images img {
+  margin-right: 0.5em;
+}
+
+.images img:hover {
+  width: 500px;
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */
