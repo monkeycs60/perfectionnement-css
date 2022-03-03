@@ -149,10 +149,14 @@ footer {
 
 .images img {
   margin-right: 0.5em;
+  -webkit-transition: 0.6s ease-out 0.3s;
+  transition: 0.6s ease-out 0.3s;
 }
 
 .images img:hover {
-  width: 500px;
-  height: 300px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-box-shadow: 6px 6px 6px black;
+          box-shadow: 6px 6px 6px black;
 }
 /*# sourceMappingURL=style.css.map */
