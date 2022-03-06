@@ -29,19 +29,31 @@ header {
   text-align: center;
 }
 
-.bouton {
-  padding: 0.6em;
-  background-color: #1db33d;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+.funanim {
+  display: inline-block;
+  font-size: 2em;
+  color: #421f92;
+  position: relative;
 }
 
-.bouton:hover {
-  background-color: gold;
-}
-
-.bouton:focus {
+.funanim::before {
+  content: "";
+  display: block;
+  position: absolute;
   background-color: red;
+  height: 3px;
+  width: 100%;
+  left: 69px;
+  top: 35px;
+  -webkit-transform: translateX(-50%) scale(0);
+          transform: translateX(-50%) scale(0);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.funanim:hover::before {
+  -webkit-transform: translateX(-50%) scale(1);
+          transform: translateX(-50%) scale(1);
 }
 
 .header__text {

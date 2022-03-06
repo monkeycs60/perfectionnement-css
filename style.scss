@@ -26,20 +26,34 @@ body {
   }
   $color: blue;
  
-    
-  
-  .bouton {
-    padding: 0.6em;
-    background-color: #1db33d;
-    transition: all 0.3s ease-out;
-    &:hover {
-    
-     background-color: gold;
-    }
-    &:focus {
-      background-color: red;
-    }
+
+  .setupanim {
+
   }
+  .funanim {
+    display: inline-block;
+    font-size: 2em;
+    color: rgb(66, 31, 146);
+    position: relative;
+  
+  }
+  .funanim::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: red; 
+    height: 3px;
+    width: 100%;
+    left: 69px;
+    top: 35px;
+    transform: translateX(-50%) scale(0);
+    transition: 1s ease;
+  }
+  .funanim:hover::before {
+    transform: translateX(-50%) scale(1);
+  }
+  
+  
   .header__text {
     color: red;
   }
