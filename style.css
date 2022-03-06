@@ -29,6 +29,21 @@ header {
   text-align: center;
 }
 
+.bouton {
+  padding: 0.6em;
+  background-color: #1db33d;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.bouton:hover {
+  background-color: gold;
+}
+
+.bouton:focus {
+  background-color: red;
+}
+
 .header__text {
   color: red;
 }

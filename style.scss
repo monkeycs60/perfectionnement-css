@@ -24,6 +24,22 @@ body {
     background-color: aquamarine;
     text-align: center;
   }
+  $color: blue;
+ 
+    
+  
+  .bouton {
+    padding: 0.6em;
+    background-color: #1db33d;
+    transition: all 0.3s ease-out;
+    &:hover {
+    
+     background-color: gold;
+    }
+    &:focus {
+      background-color: red;
+    }
+  }
   .header__text {
     color: red;
   }
