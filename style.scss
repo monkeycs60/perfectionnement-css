@@ -1,3 +1,5 @@
+$color-de-merde: blue; 
+
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -68,6 +70,7 @@ body {
     }
   }
  
+ 
 
   article {
     background-color: violet;
@@ -98,6 +101,7 @@ body {
   
   footer {
     color: $color-nice;
+    color: adjust-hue($color: $color-nice, $degrees: 120deg);
     background-color: yellow;
     grid-column: 2 / span 3;
     grid-row: 3;
