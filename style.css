@@ -100,7 +100,7 @@ article:hover {
   background-color: aqua;
 }
 
-.maintext {
+.maintext, .footerp {
   color: red;
   text-shadow: 1px 1px 1px blue;
   padding-top: 2em;

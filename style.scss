@@ -103,6 +103,9 @@ body {
     grid-row: 3;
     font-size: $font-sizedd;
   }
+  .footerp {
+    @extend .maintext
+  }
   .caroussel {
     background-color: blue;
     display: grid;
